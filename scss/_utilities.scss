@@ -5,6 +5,36 @@
   overflow: hidden;
 }
 
+.py{
+  &-1{
+    padding: 1rem 0;
+  }
+  &-2{
+    padding: 2rem 0;
+  }
+  &-3{
+    padding: 3rem 0;
+  }
+  &-4{
+    padding: 4rem 0;
+  }
+}
+
+.my{
+  &-1{
+    margin: 1rem 0;
+  }
+  &-2{
+    margin: 2rem 0;
+  }
+  &-3{
+    margin: 3rem 0;
+  }
+  &-4{
+    margin: 4rem 0;
+  }
+}
+
 %btn-shared{
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -23,7 +53,7 @@
     color: $dark-color;
     background-color: $main-color;
     &:hover{@extend %btn-hover}
-    
+
   }
   &-light{
       @extend %btn-shared;
@@ -48,4 +78,21 @@
 
 .text-center{
   text-align: center;
+}
+
+.section-title{
+  font-size: 2rem;
+  display: block;
+  padding-bottom:0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line{
+  height: 2px;
+  width: 3rem;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
 }
